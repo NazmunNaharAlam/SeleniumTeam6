@@ -15,6 +15,8 @@ import javax.xml.ws.WebEndpoint;
 
 public class BOAHome extends CommonAPI {
 
+// test branch
+
     @FindBy(how = How.XPATH, using = ".//*[@id='hp-section-1']/div[1]/div[1]/ul/li[3]/a")
     public static WebElement onlineId1;
     @FindBy(how = How.XPATH, using = ".//*[@id='passcode1']")
@@ -23,6 +25,7 @@ public class BOAHome extends CommonAPI {
     public static WebElement hpsigninbtn;
 
     public void Signin() {
+	int i =0;
         onlineId1.sendKeys("iamdolon");
         passcode1.sendKeys("Dolon1");
         hpsigninbtn.click();
