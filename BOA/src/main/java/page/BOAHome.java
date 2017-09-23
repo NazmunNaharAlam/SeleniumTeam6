@@ -25,6 +25,7 @@ public class BOAHome extends CommonAPI {
     public static WebElement hpsigninbtn;
 
     public void Signin() {
+	int i =0;
         onlineId1.sendKeys("iamdolon");
         passcode1.sendKeys("Dolon1");
         hpsigninbtn.click();
